@@ -23,7 +23,8 @@ public class LiquibaseConfiguration {
 
     private final Environment env;
 
-    private final CacheManager cacheManager;
+    @SuppressWarnings("unused")
+	private final CacheManager cacheManager;
 
     public LiquibaseConfiguration(Environment env, CacheManager cacheManager) {
         this.env = env;
